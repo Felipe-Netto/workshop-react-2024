@@ -16,17 +16,18 @@ export function Form(props: FormProps) {
                     setState("");
                 }
             }}>
-                <div className="flex flex-row w-full gap-4 mt-4">
+                <div className="flex flex-row w-full mt-4">
                     <input
-                        className="h-[50px] flex-1 rounded-lg p-3 text-lg outline-none"
+                        className="h-[50px] flex-1 rounded-l-lg p-3 text-lg outline-none"
                         onChange={(event) => setState(event.target.value)}
                         value={state}
+                        placeholder="Adicionar tarefa"
                     />
                     <button
-                        className="h-[50px] pl-4 pr-4 bg-slate-400 rounded-lg font-bold"
+                        className="h-[50px] pl-4 pr-4 bg-green-400 hover:bg-green-500 rounded-r-lg font-bold text-green-700 hover:text-white"
                         type="submit"
                     >
-                        <Plus className="text-slate-900 text-2xl" />
+                        <Plus className="text-2xl" />
                     </button>
                 </div>
             </form>

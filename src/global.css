@@ -2,11 +2,6 @@
 @tailwind utilities;
 @tailwind components;
 
-html,
-body {
-  background-color: #1e293b;
-}
-
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
